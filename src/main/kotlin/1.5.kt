@@ -9,10 +9,10 @@ fun main() {
     if (n == null || x == null) {
         println("Неправильный ввод")
     }
-    for (i in -sqrt(x!!).toInt()..sqrt(x).toInt()) {
-        val result = x.pow(i)
+    for (i in (-sqrt(n!!.toDouble()).toInt() - 1)..(sqrt(n.toDouble()).toInt() + 1)) {
+        val result = x!!.pow(i)
         if (result == n!!.toDouble()) {
-            println("Целочисленный показатель существует: ${result.toInt()}")
+            println("Целочисленный показатель существует: $i")
             return
         }
     }
