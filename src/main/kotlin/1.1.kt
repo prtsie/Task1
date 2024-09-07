@@ -1,6 +1,8 @@
 fun main() {
+    println("Введите строку")
     val input = readln()
     if (input.isEmpty()) {
+        println("Неверный ввод")
         return
     }
     var result = ""
@@ -31,5 +33,5 @@ fun main() {
     {
         result += lastChar + count.toString()
     }
-    println(result)
+    println("Результат: $result")
 }
