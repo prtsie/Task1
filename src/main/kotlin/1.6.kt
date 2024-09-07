@@ -1,6 +1,3 @@
-import kotlin.math.pow
-import kotlin.math.sqrt
-
 fun main() {
     print("Введите первую цифру: ")
     val first = readln()
